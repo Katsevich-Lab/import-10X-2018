@@ -1,6 +1,6 @@
-# Tian 2024 Data Repository
+# 10X 2018 Data Repository
 
-This repository contains code and data structure for importing and processing the **10x 2018 single-cell RNA sequencing data**. Here, we get **two similar single-cell RNA sequencing (scRNA-seq) experiments** conducted on **Human PBMC (Peripheral Blood Mononuclear Cells)** from a healthy donor. The datasets are provided by 10X Genomics as sample datasets. One dataset contains approximately 1000 cells, while the other contains approximately 10000 cells,
+This repository contains code and data structure for importing and processing the **10X 2018 single-cell RNA sequencing data**. Here, we get **two similar single-cell RNA sequencing (scRNA-seq) experiments** conducted on **Human PBMC (Peripheral Blood Mononuclear Cells)** from a healthy donor. The datasets are provided by 10X Genomics as sample datasets. One dataset contains approximately 1000 cells, while the other contains approximately 10000 cells,
 
 Data from the two experiments are labeled as:
 - **pbmc_1k_v3** 
@@ -71,14 +71,14 @@ qsub -l m_mem_free=64G process_data.sh
 
 1. **Clone the repository**:
    ```bash
-   git clone git@github.com:Katsevich-Lab/import-10x-2018.git
+   git clone git@github.com:Katsevich-Lab/import-10X-2018.git
    cd import-tian-2024
    ```
 
 2. **Set up the environment**:
    Ensure `.research_config` contains the following:
    ```bash
-   export LOCAL_10X_2018_DATA_DIR="/path/to/10x-2018/"
+   export LOCAL_10X_2018_DATA_DIR="/path/to/10X-2018/"
    ```
 
 3. **Submit the job**:
@@ -91,13 +91,6 @@ qsub -l m_mem_free=64G process_data.sh
 - Ensure all dependencies are installed and accessible in your `$PATH`:
   - `cellranger` and `wget`.
 - Sufficient memory (≥64GB recommended) and disk space are required to process the data.
-
----
-
-## Citation
-
-If using this pipeline or data for your work, please cite:
-- **Tian et al., 2024**: DOI: 10.1038/s41588-024-02019-8
 
 ---
 
