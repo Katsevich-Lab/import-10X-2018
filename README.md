@@ -12,10 +12,10 @@ The pipeline includes downloading FASTQ files, preprocessing with **Cell Ranger*
 
 ## Directory Structure
 
-After running the pipeline, the directory structure under the **`tian-2024`** directory is organized as follows:
+After running the pipeline, the directory structure under the **`10X-2018`** directory is organized as follows:
 
 ```plaintext
-tian-2024
+10X-2018
 ├── raw
 │   ├── pbmc_1k_v3_fastqs
 │   │   ├── pbmc_1k_v3_S1_L001_R1_001.fastq
@@ -72,7 +72,7 @@ qsub -l m_mem_free=64G process_data.sh
 1. **Clone the repository**:
    ```bash
    git clone git@github.com:Katsevich-Lab/import-10X-2018.git
-   cd import-tian-2024
+   cd import-10X-2018
    ```
 
 2. **Set up the environment**:
